@@ -2,6 +2,7 @@
 
 import prompt
 import random
+from .game_module import play_game
 
 
 def check_if_even(number):
@@ -42,23 +43,6 @@ def play_round():
     return string
 
 
-def play_game():
-    name = prompt.string("May I have your name? ")
-    while len(name.strip()) == 0:
-        name = prompt.string("You entered empty name."
-                             "May I have your real name? ")
-    print(f"Hello, {name.strip()}!\n"
-          'Answer "yes" if the number is even, otherwise answer "no".')
-    counter = 0
-    while counter < 3:
-        round_result = play_round()
-        if len(round_result) < 1:
-            counter += 1
-        else:
-            print(f"{round_result} Let's try again, {name}!")
-            return
-    print(f"Congratulations, {name}!")
-
-
-if __name__ == "__main__":
-    main()
+def play_even_game():
+    play_game('Answer "yes" if the number is even, otherwise answer "no".',
+              play_round)
