@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from ..calc_module import play_calculator
+from ..games.calc_module import play_calculator
 
 
 def main():

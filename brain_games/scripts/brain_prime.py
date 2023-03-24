@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from ..prime_module import play_prime
+from ..games.prime_module import play_prime
 
 
 def main():

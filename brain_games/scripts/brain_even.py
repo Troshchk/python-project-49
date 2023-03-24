@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from ..even_module import play_even_game
+from ..games.even_module import play_even_game
 
 
 def main():

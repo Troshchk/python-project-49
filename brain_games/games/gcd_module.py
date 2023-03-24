@@ -2,7 +2,7 @@
 
 import prompt
 import random
-from .game_module import play_game
+from ..game_module import play_game, MAX_RANDOM_NUMBER
 
 
 def find_gcd(number1, number2):
@@ -16,8 +16,8 @@ def find_gcd(number1, number2):
 
 
 def play_round():
-    number1 = random.randint(1, 100)
-    number2 = random.randint(1, 100)
+    number1 = random.randint(1, MAX_RANDOM_NUMBER)
+    number2 = random.randint(1, MAX_RANDOM_NUMBER)
     gcd = find_gcd(number1, number2)  # alternative: math.gcd(number1, number2)
     print(f"Question: {number1} {number2}")
     answer = prompt.string("Your answer: ")

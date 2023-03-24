@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from ..gcd_module import play_gcd
+from ..games.gcd_module import play_gcd
 
 
 def main():

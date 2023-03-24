@@ -2,6 +2,9 @@
 
 import prompt
 
+MAX_RANDOM_NUMBER = 100
+MAX_ROUNDS = 3
+
 
 def play_game(instruction_string, eval_function):
     name = prompt.string("May I have your name? ")
@@ -11,7 +14,7 @@ def play_game(instruction_string, eval_function):
     print(f"Hello, {name.strip()}!\n"
           f'{instruction_string}')
     counter = 0
-    while counter < 3:
+    while counter < MAX_ROUNDS:
         round_result = eval_function()
         if len(round_result) < 1:
             counter += 1

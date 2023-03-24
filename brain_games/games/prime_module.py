@@ -2,7 +2,7 @@
 
 import prompt
 import random
-from .game_module import play_game
+from ..game_module import play_game, MAX_RANDOM_NUMBER
 from .bool_game_module import is_valid, translate_to_bool, revert_answer
 
 
@@ -16,7 +16,7 @@ def check_if_prime(number):
 
 
 def play_round():
-    number = random.randint(1, 100)
+    number = random.randint(1, MAX_RANDOM_NUMBER)
     print(f"Question: {number}")
     answer = prompt.string("Your answer: ")
     answer = answer.strip()

@@ -2,14 +2,18 @@
 
 import prompt
 import random
-from .game_module import play_game
+from ..game_module import play_game, MAX_RANDOM_NUMBER
+
+MAX_PROGRESSION_LENGTH = 10
 
 
 def play_round():
-    start = random.randint(1, 100)
-    step = random.randint(1, 100)
-    progression = list(range(start, start + step * 10 + 1, step))
-    position = random.randint(0, 10)
+    start = random.randint(1, MAX_RANDOM_NUMBER)
+    step = random.randint(1, MAX_RANDOM_NUMBER)
+    progression = list(range(start,
+                             start + step * MAX_PROGRESSION_LENGTH + 1,
+                             step))
+    position = random.randint(0, MAX_PROGRESSION_LENGTH)
     correct_answer = progression[position]
     progression_new = list(progression[:position]
                            + [".."]

@@ -2,7 +2,7 @@
 
 import prompt
 import random
-from .game_module import play_game
+from ..game_module import play_game, MAX_RANDOM_NUMBER
 
 
 def evaluate_calculation(number1, number2, operation):
@@ -15,8 +15,8 @@ def evaluate_calculation(number1, number2, operation):
 
 
 def play_round():
-    number1 = random.randint(1, 100)
-    number2 = random.randint(1, 100)
+    number1 = random.randint(1, MAX_RANDOM_NUMBER)
+    number2 = random.randint(1, MAX_RANDOM_NUMBER)
     operation = random.choice(["+", "-", "*"])
     calculation_result = evaluate_calculation(number1, number2, operation)
     print(f"Question: {number1} {operation} {number2}")
