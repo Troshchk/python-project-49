@@ -9,7 +9,7 @@ from .bool_game_module import is_valid, translate_to_bool, revert_answer
 def check_if_prime(number):
     if number == 1:
         return False
-    for div in range(2, number//2):
+    for div in range(2, number // 2):
         if number % div == 0:
             return False
     return True

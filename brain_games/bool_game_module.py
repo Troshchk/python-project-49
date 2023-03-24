@@ -17,4 +17,3 @@ def revert_answer(answer):
         return "no"
     elif answer == "no":
         return "yes"
-

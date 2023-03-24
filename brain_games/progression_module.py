@@ -6,14 +6,14 @@ from .game_module import play_game
 
 
 def play_round():
-    start = random.randint(1, 100) 
+    start = random.randint(1, 100)
     step = random.randint(1, 100)
     progression = list(range(start, start + step * 10 + 1, step))
     position = random.randint(0, 10)
     correct_answer = progression[position]
-    progression_new = list(progression[:position] +
-                           [".."] +
-                           progression[position + 1:])
+    progression_new = list(progression[:position]
+                           + [".."]
+                           + progression[position + 1:])
     progression_new = [str(element) for element in progression_new]
     print(f"Question: {' '.join(progression_new)}")
     answer = prompt.string("Your answer: ")
