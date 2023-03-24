@@ -3,28 +3,11 @@
 import prompt
 import random
 from .game_module import play_game
+from .bool_game_module import is_valid, translate_to_bool, revert_answer
 
 
 def check_if_even(number):
     return not number % 2
-
-
-def is_valid(answer):
-    return answer in ["yes", "no"]
-
-
-def translate_to_bool(answer):
-    if answer == "yes":
-        return True
-    elif answer == "no":
-        return False
-
-
-def revert_answer(answer):
-    if answer == "yes":
-        return "no"
-    elif answer == "no":
-        return "yes"
 
 
 def play_round():
