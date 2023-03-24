@@ -8,3 +8,6 @@
 
 ## Demo for the calculator game
 <a href="https://asciinema.org/a/OS8eBJN0xvobozmUYERSYKZAV" target="_blank"><img src="https://asciinema.org/a/OS8eBJN0xvobozmUYERSYKZAV.svg" /></a>
+
+## Demo for gcd game
+<a href="https://asciinema.org/a/TpoxSVkbcbYQTs1BpJ2AX9inW" target="_blank"><img src="https://asciinema.org/a/TpoxSVkbcbYQTs1BpJ2AX9inW.svg" /></a>
