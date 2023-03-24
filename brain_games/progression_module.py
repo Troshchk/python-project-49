@@ -30,4 +30,4 @@ def play_round():
 
 
 def play_progression():
-    play_game('What is the result of the expression?', play_round)
+    play_game('What number is missing in the progression?', play_round)
