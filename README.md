@@ -14,3 +14,6 @@
 
 ## Demo for arithmetic progression
 <a href="https://asciinema.org/a/KkDHtYiRZG3q6JS08SdL1RJ4f" target="_blank"><img src="https://asciinema.org/a/KkDHtYiRZG3q6JS08SdL1RJ4f.svg" /></a>
+
+## Demo for prime numbers game
+<a href="https://asciinema.org/a/5GYE8OTu0mAbVJMP7GPJuhm1h" target="_blank"><img src="https://asciinema.org/a/5GYE8OTu0mAbVJMP7GPJuhm1h.svg" /></a>
