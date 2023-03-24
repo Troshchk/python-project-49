@@ -11,3 +11,6 @@
 
 ## Demo for gcd game
 <a href="https://asciinema.org/a/TpoxSVkbcbYQTs1BpJ2AX9inW" target="_blank"><img src="https://asciinema.org/a/TpoxSVkbcbYQTs1BpJ2AX9inW.svg" /></a>
+
+## Demo for arithmetic progression
+<a href="https://asciinema.org/a/KkDHtYiRZG3q6JS08SdL1RJ4f" target="_blank"><img src="https://asciinema.org/a/KkDHtYiRZG3q6JS08SdL1RJ4f.svg" /></a>
