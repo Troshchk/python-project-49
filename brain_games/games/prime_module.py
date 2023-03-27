@@ -32,5 +32,5 @@ def play_round():
 
 
 def play_prime():
-    play_game('Answer "yes" if the number is prime, otherwise answer "no".',
+    play_game('Answer "yes" if given number is prime, otherwise answer "no".',
               play_round)
