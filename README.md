@@ -10,10 +10,15 @@ In each game there are three rounds. After 3 correct answers the games are finis
 Any wrong answer leads to the exit from the game.
 
 The list of the games and the corresponding questions are:
+
 **brain-even** - is the shown number even
+
 **brain-calc** - what is the result of the shown operation
+
 **brain-gcd** - what is the greates common divisor of the shown numbers
+
 **brain-progression** - what is the missing number in arithmetic progression
+
 **brain-prime** - is the number prime
 
 # Requirements
