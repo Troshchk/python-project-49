@@ -11,8 +11,8 @@ def play_game(instruction_string, eval_function):
     while len(name.strip()) == 0:
         name = prompt.string("You entered empty name."
                              "May I have your real name? ")
-    print(f"Hello, {name.strip()}!\n"
-          f'{instruction_string}')
+    print(f"Hello, {name.strip()}!")
+    print(f'{instruction_string}')
     counter = 0
     while counter < MAX_ROUNDS:
         round_result = eval_function()
