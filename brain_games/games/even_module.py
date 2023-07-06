@@ -25,4 +25,3 @@ def play_round():
             string = f"{answer} is wrong answer ;(. "\
                 f"Correct answer was {revert_answer(answer)}."
     return string
-
