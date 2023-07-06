@@ -2,7 +2,7 @@
 
 import prompt
 import random
-from ..game_module import play_game, MAX_RANDOM_NUMBER
+MAX_RANDOM_NUMBER = 100
 
 
 def evaluate_calculation(number1, number2, operation):

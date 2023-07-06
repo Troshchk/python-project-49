@@ -2,7 +2,6 @@
 
 import prompt
 
-MAX_RANDOM_NUMBER = 100
 MAX_ROUNDS = 3
 
 

@@ -2,7 +2,8 @@
 
 import prompt
 import random
-from ..game_module import play_game, MAX_RANDOM_NUMBER
+
+MAX_RANDOM_NUMBER = 100
 
 
 def find_gcd(number1, number2):

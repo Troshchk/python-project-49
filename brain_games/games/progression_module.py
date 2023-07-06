@@ -2,10 +2,9 @@
 
 import prompt
 import random
-from ..game_module import play_game, MAX_RANDOM_NUMBER
 
 MAX_PROGRESSION_LENGTH = 10
-
+MAX_RANDOM_NUMBER = 100
 
 def play_round():
     start = random.randint(1, MAX_RANDOM_NUMBER)

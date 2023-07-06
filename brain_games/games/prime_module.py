@@ -2,8 +2,9 @@
 
 import prompt
 import random
-from ..game_module import play_game, MAX_RANDOM_NUMBER
 from .bool_game_module import is_valid, translate_to_bool, revert_answer
+
+MAX_RANDOM_NUMBER = 100
 
 
 def check_if_prime(number):
