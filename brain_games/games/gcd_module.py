@@ -32,7 +32,3 @@ def play_round():
             string = f"{answer} is wrong answer ;(. "\
                 f"Correct answer was {gcd}."
     return string
-
-
-def play_gcd():
-    play_game('Find the greatest common divisor of given numbers.', play_round)

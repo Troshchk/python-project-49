@@ -6,6 +6,7 @@ import random
 MAX_PROGRESSION_LENGTH = 10
 MAX_RANDOM_NUMBER = 100
 
+
 def play_round():
     start = random.randint(1, MAX_RANDOM_NUMBER)
     step = random.randint(1, MAX_RANDOM_NUMBER)
@@ -30,7 +31,3 @@ def play_round():
             string = f"{answer} is wrong answer ;(. "\
                 f"Correct answer was {correct_answer}."
     return string
-
-
-def play_progression():
-    play_game('What number is missing in the progression?', play_round)

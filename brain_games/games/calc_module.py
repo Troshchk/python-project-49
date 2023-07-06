@@ -31,7 +31,3 @@ def play_round():
             string = f"{answer} is wrong answer ;(. "\
                 f"Correct answer was {calculation_result}."
     return string
-
-
-def play_calculator():
-    play_game('What is the result of the expression?', play_round)

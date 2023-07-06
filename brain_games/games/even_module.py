@@ -26,7 +26,3 @@ def play_round():
                 f"Correct answer was {revert_answer(answer)}."
     return string
 
-
-def play_even_game():
-    play_game('Answer "yes" if the number is even, otherwise answer "no".',
-              play_round)

@@ -30,8 +30,3 @@ def play_round():
             string = f"{answer} is wrong answer ;(. "\
                 f"Correct answer was {revert_answer(answer)}."
     return string
-
-
-def play_prime():
-    play_game('Answer "yes" if given number is prime. Otherwise answer "no".',
-              play_round)
