@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
-from ..games.calc_module import play_round
+
 from ..game_module import play_game
+from ..games import calc_module as game
 
 
 def main():
-    play_game('What is the result of the expression?', play_round)
+    play_game(game)
 
 
 if __name__ == "__main__":

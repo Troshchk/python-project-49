@@ -5,6 +5,7 @@ import random
 from .bool_game_module import is_valid, translate_to_bool, revert_answer
 
 MAX_RANDOM_NUMBER = 100
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def check_if_even(number):

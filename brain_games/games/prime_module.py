@@ -5,6 +5,7 @@ import random
 from .bool_game_module import is_valid, translate_to_bool, revert_answer
 
 MAX_RANDOM_NUMBER = 100
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def check_if_prime(number):

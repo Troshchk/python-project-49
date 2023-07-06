@@ -5,6 +5,7 @@ import random
 
 MAX_PROGRESSION_LENGTH = 10
 MAX_RANDOM_NUMBER = 100
+RULES = 'What number is missing in the progression?'
 
 
 def play_round():

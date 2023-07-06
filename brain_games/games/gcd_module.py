@@ -4,6 +4,7 @@ import prompt
 import random
 
 MAX_RANDOM_NUMBER = 100
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def find_gcd(number1, number2):

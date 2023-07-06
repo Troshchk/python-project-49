@@ -4,6 +4,8 @@ import prompt
 import random
 MAX_RANDOM_NUMBER = 100
 
+RULES = 'What is the result of the expression?'
+
 
 def evaluate_calculation(number1, number2, operation):
     if operation == "+":
