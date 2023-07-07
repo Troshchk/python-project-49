@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import prompt
 import random
 MAX_RANDOM_NUMBER = 100
 
@@ -16,14 +15,7 @@ def evaluate_calculation(number1, number2, operation):
         return (number1 * number2)
 
 
-def play_round():
-    number1 = random.randint(1, MAX_RANDOM_NUMBER)
-    number2 = random.randint(1, MAX_RANDOM_NUMBER)
-    operation = random.choice(["+", "-", "*"])
-    calculation_result = evaluate_calculation(number1, number2, operation)
-    print(f"Question: {number1} {operation} {number2}")
-    answer = prompt.string("Your answer: ")
-    answer = answer.strip()
+def eval_answer(calculation_result, answer):
     if not answer.lstrip("-").isnumeric():
         string = "You entered invalid answer."
     else:
@@ -33,3 +25,12 @@ def play_round():
             string = f"{answer} is wrong answer ;(. "\
                 f"Correct answer was {calculation_result}."
     return string
+
+
+def play_round():
+    number1 = random.randint(1, MAX_RANDOM_NUMBER)
+    number2 = random.randint(1, MAX_RANDOM_NUMBER)
+    operation = random.choice(["+", "-", "*"])
+    calculation_result = evaluate_calculation(number1, number2, operation)
+    question = f"Question: {number1} {operation} {number2}"
+    return question, str(calculation_result)

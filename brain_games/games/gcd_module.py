@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import prompt
 import random
 
 MAX_RANDOM_NUMBER = 100
@@ -17,19 +16,21 @@ def find_gcd(number1, number2):
                 return int(potencial_divisor)
 
 
-def play_round():
-    number1 = random.randint(1, MAX_RANDOM_NUMBER)
-    number2 = random.randint(1, MAX_RANDOM_NUMBER)
-    gcd = find_gcd(number1, number2)  # alternative: math.gcd(number1, number2)
-    print(f"Question: {number1} {number2}")
-    answer = prompt.string("Your answer: ")
-    answer = answer.strip()
+def eval_answer(calculation_result, answer):
     if not answer.isnumeric():
         string = "You entered invalid answer."
     else:
-        if int(answer) == gcd:
+        if int(answer) == calculation_result:
             string = ""
         else:
             string = f"{answer} is wrong answer ;(. "\
-                f"Correct answer was {gcd}."
+                f"Correct answer was {calculation_result}."
     return string
+
+
+def play_round():
+    number1 = random.randint(1, MAX_RANDOM_NUMBER)
+    number2 = random.randint(1, MAX_RANDOM_NUMBER)
+    calculation_result = find_gcd(number1, number2)  # alt: math.gcd(num1, num2)
+    question = f"Question: {number1} {number2}"
+    return question, calculation_result

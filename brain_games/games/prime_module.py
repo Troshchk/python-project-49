@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import prompt
 import random
 from .bool_game_module import is_valid, translate_to_bool, revert_answer
 
@@ -17,17 +16,20 @@ def check_if_prime(number):
     return True
 
 
-def play_round():
-    number = random.randint(1, MAX_RANDOM_NUMBER)
-    print(f"Question: {number}")
-    answer = prompt.string("Your answer: ")
-    answer = answer.strip()
+def eval_answer(calculation_result, answer):
     if not is_valid(answer):
         string = "You entered invalid answer."
     else:
-        if translate_to_bool(answer) == check_if_prime(number):
+        if translate_to_bool(answer) == calculation_result:
             string = ""
         else:
             string = f"{answer} is wrong answer ;(. "\
                 f"Correct answer was {revert_answer(answer)}."
     return string
+
+
+def play_round():
+    number = random.randint(1, MAX_RANDOM_NUMBER)
+    question = f"Question: {number}"
+    calculation_result = check_if_prime(number)
+    return question, calculation_result
