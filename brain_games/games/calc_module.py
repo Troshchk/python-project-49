@@ -19,7 +19,7 @@ def eval_answer(calculation_result, answer):
     if not answer.lstrip("-").isnumeric():
         string = "You entered invalid answer."
     else:
-        if int(answer) == calculation_result:
+        if answer == calculation_result:
             string = ""
         else:
             string = f"{answer} is wrong answer ;(. "\
