@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import random
+from bool_game_module import evaluate_answer
+
 MAX_RANDOM_NUMBER = 100
 
 RULES = 'What is the result of the expression?'
@@ -16,15 +18,11 @@ def evaluate_calculation(number1, number2, operation):
 
 
 def eval_answer(calculation_result, answer):
-    if not answer.lstrip("-").isnumeric():
-        string = "You entered invalid answer."
-    else:
-        if answer == calculation_result:
-            string = ""
-        else:
-            string = f"{answer} is wrong answer ;(. "\
-                f"Correct answer was {calculation_result}."
-    return string
+    return evaluate_answer(
+        calculation_result,
+        answer,
+        is_valid_func=lambda x: x.lstrip("-").isnumeric(),
+    )
 
 
 def play_round():

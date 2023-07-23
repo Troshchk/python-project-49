@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 
 
-def is_valid(answer):
-    return answer in ["yes", "no"]
-
-
 def translate_to_bool(answer):
     if answer == "yes":
         return True
@@ -12,8 +8,14 @@ def translate_to_bool(answer):
         return False
 
 
-def revert_answer(answer):
-    if answer == "yes":
-        return "no"
-    elif answer == "no":
-        return "yes"
+def evaluate_answer(
+    calculation_result, answer, is_valid_func, compare_func=lambda x, y: x == y
+):
+    if not is_valid_func(answer):
+        return "You entered invalid answer."
+    if compare_func(answer, calculation_result):
+        return ""
+    return (
+        f"{answer} is wrong answer ;(. "
+        f"Correct answer was {calculation_result}."
+    )

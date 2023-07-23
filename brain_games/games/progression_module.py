@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import random
+from bool_game_module import evaluate_answer
 
 MAX_PROGRESSION_LENGTH = 10
 MAX_RANDOM_NUMBER = 100
@@ -8,15 +9,12 @@ RULES = 'What number is missing in the progression?'
 
 
 def eval_answer(calculation_result, answer):
-    if not answer.isnumeric():
-        string = "You entered invalid answer."
-    else:
-        if int(answer) == calculation_result:
-            string = ""
-        else:
-            string = f"{answer} is wrong answer ;(. "\
-                f"Correct answer was {calculation_result}."
-    return string
+    return evaluate_answer(
+        calculation_result,
+        answer,
+        is_valid_func=lambda x: x.isnumeric(),
+        compare_func=lambda x, y: int(x) == y,
+    )
 
 
 def play_round():

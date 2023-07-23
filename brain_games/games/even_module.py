@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import random
-from .bool_game_module import is_valid, translate_to_bool
+from .bool_game_module import translate_to_bool, evaluate_answer
 
 MAX_RANDOM_NUMBER = 100
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -12,15 +12,12 @@ def check_if_even(number):
 
 
 def eval_answer(calculation_result, answer):
-    if not is_valid(answer):
-        string = "You entered invalid answer."
-    else:
-        if translate_to_bool(answer) == calculation_result:
-            string = ""
-        else:
-            string = f"{answer} is wrong answer ;(. "\
-                f"Correct answer was {calculation_result}."
-    return string
+    return evaluate_answer(
+        calculation_result,
+        answer,
+        is_valid_func=lambda x: x in ["yes", "no"],
+        compare_func=lambda x, y: translate_to_bool(x) == y,
+    )
 
 
 def play_round():
