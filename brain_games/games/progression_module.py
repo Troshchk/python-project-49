@@ -12,8 +12,7 @@ def eval_answer(calculation_result, answer):
     return evaluate_answer(
         calculation_result,
         answer,
-        is_valid_func=lambda x: x.isnumeric(),
-        compare_func=lambda x, y: int(x) == y,
+        is_valid_func=lambda x: x.isnumeric()
     )
 
 
@@ -30,4 +29,4 @@ def play_round():
     )
     progression_new = [str(element) for element in progression_new]
     question = f"Question: {' '.join(progression_new)}"
-    return question, calculation_result
+    return question, str(calculation_result)

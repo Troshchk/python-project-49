@@ -29,4 +29,4 @@ def play_round():
     number2 = random.randint(1, MAX_RANDOM_NUMBER)
     calculation_result = find_gcd(number1, number2)  # alt: math.gcd(num1, num2)
     question = f"Question: {number1} {number2}"
-    return question, calculation_result
+    return question, str(calculation_result)
