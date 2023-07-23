@@ -5,16 +5,16 @@ from bool_game_module import evaluate_answer
 
 MAX_RANDOM_NUMBER = 100
 
-RULES = 'What is the result of the expression?'
+RULES = "What is the result of the expression?"
 
 
 def evaluate_calculation(number1, number2, operation):
     if operation == "+":
-        return (number1 + number2)
+        return number1 + number2
     elif operation == "-":
-        return (number1 - number2)
+        return number1 - number2
     if operation == "*":
-        return (number1 * number2)
+        return number1 * number2
 
 
 def eval_answer(calculation_result, answer):

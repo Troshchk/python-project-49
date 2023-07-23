@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
 import random
+from bool_game_module import evaluate_answer
+
 
 MAX_RANDOM_NUMBER = 100
-RULES = 'Find the greatest common divisor of given numbers.'
+RULES = "Find the greatest common divisor of given numbers."
 
 
 def find_gcd(number1, number2):
@@ -17,15 +19,9 @@ def find_gcd(number1, number2):
 
 
 def eval_answer(calculation_result, answer):
-    if not answer.isnumeric():
-        string = "You entered invalid answer."
-    else:
-        if int(answer) == calculation_result:
-            string = ""
-        else:
-            string = f"{answer} is wrong answer ;(. "\
-                f"Correct answer was {calculation_result}."
-    return string
+    return evaluate_answer(
+        calculation_result, answer, is_valid_func=lambda x: x.isnumeric()
+    )
 
 
 def play_round():
