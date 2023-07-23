@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import random
-from bool_game_module import evaluate_answer
+from .bool_game_module import evaluate_answer
 
 MAX_RANDOM_NUMBER = 100
 
