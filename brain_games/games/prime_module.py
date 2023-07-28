@@ -15,7 +15,7 @@ def check_if_prime(number):
     return True
 
 
-def is_valid_func(x): 
+def is_valid_func(x):
     return x in ["yes", "no"],
 
 

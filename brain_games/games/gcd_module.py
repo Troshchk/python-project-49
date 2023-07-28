@@ -17,7 +17,7 @@ def find_gcd(number1, number2):
                 return int(potencial_divisor)
 
 
-def is_valid_func(x): 
+def is_valid_func(x):
     return x.isnumeric()
 
 

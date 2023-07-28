@@ -7,7 +7,7 @@ MAX_RANDOM_NUMBER = 100
 RULES = "What number is missing in the progression?"
 
 
-def is_valid_func(x): 
+def is_valid_func(x):
     return x.isnumeric()
 
 

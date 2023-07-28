@@ -10,7 +10,7 @@ def check_if_even(number):
     return not number % 2
 
 
-def is_valid_func(x): 
+def is_valid_func(x):
     return x in ["yes", "no"],
 
 
