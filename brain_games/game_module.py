@@ -16,14 +16,6 @@ def play_game(game):
         print(question)
         answer = prompt.string("Your answer: ")
         answer = answer.strip()
-        print(
-            answer,
-            answer.isnumeric(),
-            type(answer),
-            calculation_result,
-            type(calculation_result),
-            answer == calculation_result,
-        )
         string = game.eval_answer(calculation_result, answer)
         if len(string) > 1:
             print(f"{string} Let's try again, {name}!")
