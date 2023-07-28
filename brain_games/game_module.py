@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import prompt
 
 MAX_ROUNDS = 3
@@ -8,8 +6,9 @@ MAX_ROUNDS = 3
 def play_game(game):
     name = prompt.string("May I have your name? ")
     while len(name.strip()) == 0:
-        name = prompt.string("You entered empty name. "
-                             "May I have your real name? ")
+        name = prompt.string(
+            "You entered empty name. " "May I have your real name? "
+        )
     print(f"Hello, {name.strip()}!")
     print(game.RULES)
     for _ in range(MAX_ROUNDS):
@@ -17,6 +16,14 @@ def play_game(game):
         print(question)
         answer = prompt.string("Your answer: ")
         answer = answer.strip()
+        print(
+            answer,
+            answer.isnumeric(),
+            type(answer),
+            calculation_result,
+            type(calculation_result),
+            answer == calculation_result,
+        )
         string = game.eval_answer(calculation_result, answer)
         if len(string) > 1:
             print(f"{string} Let's try again, {name}!")
