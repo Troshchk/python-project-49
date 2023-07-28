@@ -2,3 +2,10 @@
 brain_games/__pycache__/
 brain_games/scripts/__pycache__/
 .venv 
+dist/hexlet_code-0.1.0-py3-none-any.whl
+dist/hexlet_code-0.1.0.tar.gz
+brain_games/games/__pycache__/bool_game_module.cpython-311.pyc
+brain_games/games/__pycache__/calc_module.cpython-311.pyc
+brain_games/games/__pycache__/even_module.cpython-311.pyc
+brain_games/games/__pycache__/prime_module.cpython-311.pyc
+.gitignore
