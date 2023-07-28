@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
 
 import random
-from .bool_game_module import evaluate_answer
 
 MAX_PROGRESSION_LENGTH = 10
 MAX_RANDOM_NUMBER = 100
 RULES = "What number is missing in the progression?"
 
 
-def eval_answer(calculation_result, answer):
-    return evaluate_answer(
-        calculation_result,
-        answer,
-        is_valid_func=lambda x: x.isnumeric()
-    )
+def is_valid_func(x): 
+    return x.isnumeric()
 
 
 def play_round():

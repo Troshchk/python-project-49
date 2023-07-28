@@ -1,4 +1,6 @@
 import prompt
+from .games.bool_game_module import evaluate_answer
+
 
 MAX_ROUNDS = 3
 
@@ -16,7 +18,7 @@ def play_game(game):
         print(question)
         answer = prompt.string("Your answer: ")
         answer = answer.strip()
-        string = game.eval_answer(calculation_result, answer)
+        string = evaluate_answer(calculation_result, answer, game.is_valid_func)
         if len(string) > 1:
             print(f"{string} Let's try again, {name}!")
             return

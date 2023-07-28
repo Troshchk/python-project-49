@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import random
-from .bool_game_module import evaluate_answer
 
 MAX_RANDOM_NUMBER = 100
 
@@ -17,12 +16,8 @@ def evaluate_calculation(number1, number2, operation):
         return number1 * number2
 
 
-def eval_answer(calculation_result, answer):
-    return evaluate_answer(
-        calculation_result,
-        answer,
-        is_valid_func=lambda x: x.lstrip("-").isnumeric(),
-    )
+def is_valid_func(x):
+    return x.lstrip("-").isnumeric()
 
 
 def play_round():

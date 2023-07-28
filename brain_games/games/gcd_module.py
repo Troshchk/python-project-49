@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import random
-from .bool_game_module import evaluate_answer
 
 
 MAX_RANDOM_NUMBER = 100
@@ -18,10 +17,8 @@ def find_gcd(number1, number2):
                 return int(potencial_divisor)
 
 
-def eval_answer(calculation_result, answer):
-    return evaluate_answer(
-        calculation_result, answer, is_valid_func=lambda x: x.isnumeric()
-    )
+def is_valid_func(x): 
+    return x.isnumeric()
 
 
 def play_round():
