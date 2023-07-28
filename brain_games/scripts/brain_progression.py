@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from ..games import progression_module as game
-from ..game_module import play_game
+from ..game_player import play_game
 
 
 def main():

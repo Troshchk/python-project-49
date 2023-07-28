@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from ..game_module import play_game
+from ..game_player import play_game
 from ..games import calc_module as game
 
 
